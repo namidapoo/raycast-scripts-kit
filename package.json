@@ -1,0 +1,17 @@
+{
+  "name": "raycast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "shellcheck **/*.sh",
+    "format": "shfmt -ci -sr -w **/*.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.8.1",
+  "devDependencies": {
+    "lefthook": "^1.11.13"
+  }
+}

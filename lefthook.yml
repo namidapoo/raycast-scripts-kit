@@ -1,0 +1,11 @@
+pre-commit:
+  commands:
+    format:
+      glob: "*.sh"
+      run: shfmt -ci -sr -w {staged_files}
+      stage_fixed: true
+pre-push:
+  commands:
+    lint:
+      glob: "*.sh"
+      run: shellcheck {staged_files}
